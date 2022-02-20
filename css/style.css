@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
+
+*, *:hover, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 16px;
+}
+body {
+    max-width: 1920px;
+    font-size: 16px;
+}
+.header {
+    min-height: 980px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    background-image: url('../src/img/headerbackground.jpg');
+    background-size: cover;
+
+    padding: 0px 120px;
+}
+
+.header__logo {
+    width: 580px;
+}
+
+.header__title {
+    font-family: 'Monda', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 74px;
+    line-height: 100px;
+    color: #D2D0D0;
+
+    margin-top: 200px;
+}
+.header__subtitle {
+    font-family: 'Monda', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 52px;
+    color: #D2D0D0;
+
+    margin-top: 70px;
+}
+.header__button {
+    font-family: 'Monda', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 52px;
+    color: #423A35;
+    border: none;
+    background: #7E7E7E;
+    border-radius: 8px;
+    width: 340px;
+    padding: 15px 0;
+
+    margin-top: 70px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+.news-list {
+    display: flex;
+    flex-basis: 65%;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+}
+
+.aside {
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+    padding: 25px;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .04),
+    -23px 0 20px -23px rgba(0, 0, 0, .1),
+    23px 0 20px -23px rgba(0, 0, 0, .1),
+    0 0 40px rgba(0, 0, 0, .04) inset;
+
+    border-radius: 12px;
+}
+
+.news__datetime {
+    font-family: 'Monda', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+
+    color: #000000;
+
+    display: flex;
+    flex-basis: 100%;
+}
+
+.news__title {
+    font-family: 'Monda', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 52px;
+    color: #000000;
+    flex-basis: 100%;
+
+    margin-top: 25px;
+}
+.news__short-text {
+    font-family: 'Monda', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 39px;
+    color: #000000;
+
+    margin-top: 25px;
+}
+.news__banner {
+    display: flex;
+    position: relative;
+    height: 600px;
+
+    background: linear-gradient(144.75deg, rgba(0, 0, 0, 0) -3.24%, #000000 77.85%), url(1053279.png);
+    border-radius: 12px;
+
+    margin: 25px 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 120px;
+    background-color: #292929;
+
+    font-family: 'Monda', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 33px;
+    color: #D2D0D0;
+}
+.footer__content a{
+    margin-right: 50px;
+}
+
+.news-topic {
+    margin-top: 50px;
+    padding: 25px;
+
+    display:flex;
+    flex-direction: column;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .04),
+    -23px 0 20px -23px rgba(0, 0, 0, .1),
+    23px 0 20px -23px rgba(0, 0, 0, .1),
+    0 0 40px rgba(0, 0, 0, .04) inset;
+}
+.news-topic__title {
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 52px;
+    color: #000000;
+
+    border-left: 15px solid #292929;
+}
+.news-topic__item {
+    font-family: 'Monda', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 52px;
+    color: #000000;
+
+    margin-left: 2.2em;
+    margin-top:25px;
+
+    display: flex;
+    align-items: center;
+}
+.news-topic__item input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+}
+.checkbox {
+    position: absolute;
+    background-image: url('../src/icon/iconmonstr-checkbox-30.svg');
+    background-size: contain;
+    width:50px;
+    height: 50px;
+    margin-left: -4.4em;
+}
+
+.news-topic__item input:checked + .checkbox {
+    background-image: url('../src/icon/iconmonstr-checkbox-3.svg');
+}
+
+.news-topic__item input:hover + .checkbox {
+    background-image: url('../src/icon/iconmonstr-checkbox-3.svg');
+}
+
+
+.social-network {
+    margin-top: 50px;
+    padding: 25px;
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .04),
+    -23px 0 20px -23px rgba(0, 0, 0, .1),
+    23px 0 20px -23px rgba(0, 0, 0, .1),
+    0 0 40px rgba(0, 0, 0, .04) inset;
+}
+.social-network__title {
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 52px;
+    color: #000000;
+
+    border-left: 15px solid #292929;
+
+    flex-basis: 100%;
+
+    margin-bottom: 50px;
+}
+
+.social-network__item {
+    width: 75px;
+    height: 75px;
+}
+.popular-today {
+    margin-top: 50px;
+    padding: 25px;
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .04),
+    -23px 0 20px -23px rgba(0, 0, 0, .1),
+    23px 0 20px -23px rgba(0, 0, 0, .1),
+    0 0 40px rgba(0, 0, 0, .04) inset;
+}
+.popular-today__title {
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 52px;
+    color: #000000;
+
+    border-left: 15px solid #292929;
+
+    flex-basis: 100%;
+
+    margin-bottom: 50px;
+}
+
+.popular-today__item {
+    margin-bottom: 25px;
+}
+.popular-today__item h3 {
+    font-family: 'Monda', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 39px;
+    color: #000000;
+}
+.popular-today__item p {
+    font-family: 'Monda', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 39px;
+    color: #000000;
+}
