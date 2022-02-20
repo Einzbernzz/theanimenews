@@ -109,6 +109,17 @@ body {
     0 0 40px rgba(0, 0, 0, .04) inset;
 
     border-radius: 12px;
+
+    -moz-transition: all 0.75s ease-out;
+    -o-transition: all 0.75s ease-out;
+    -webkit-transition: all 0.75s ease-out;
+
+}
+
+.news:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 .news__datetime {
